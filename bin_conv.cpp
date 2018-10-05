@@ -2,15 +2,15 @@
 
 int main(){
     int value;
-    std::cout<<"Enter an integer value between 0...1023";
+    std::cout<<"Enter an integer value between 0...1023: ";
     std::cin>>value;
 
-    if (value => 0 && value < 1024){
+    if (0 <= value && value < 1024){
         std::cout<<value/512;
         value %= 512;
 
         std::cout<<value/256;
-        value %= 265;
+        value %= 256;
 
         std::cout<<value/128;
         value %= 128;
